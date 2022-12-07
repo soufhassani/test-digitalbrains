@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section__padding {
+    @apply py-8;
+  }
+
+  .titles {
+    @apply font-roboto font-black text-center tracking-[0.02em] leading-[35px] text-[30px] text-[#303189] uppercase;
+  }
+  .button {
+    @apply w-[274px] h-[45px] rounded-[30px] bg-[#303189] font-roboto font-[500] text-[18px] text-white leading-[21px];
+  }
+  .links {
+    @apply font-roboto flex flex-row justify-center items-center flex-1 rounded-full text-[14px]  cursor-pointer;
+  }
+  .active {
+    @apply bg-[#303189] text-white;
+  }
+  .inactive {
+    @apply text-[#909090];
+  }
+
+  .footer-links {
+    @apply relative flex-1 flex justify-center items-center w-[104px] h-[37px]  rounded-full cursor-pointer;
+  }
+  .footer-active {
+    @apply shadow-3sm before:bg-[#303189] before:opacity-[0.1] before:w-full before:h-full before:absolute before:rounded-full;
+  }
+}
