@@ -1,6 +1,7 @@
 import EventCard from "../components/EventCard";
 import { motion as m } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Events = () => {
   const cards = [
@@ -41,10 +42,9 @@ const Events = () => {
     },
   ];
 
-  const [position, setPosition] = useState(0);
+  const WindowSize = useWindowSize();
   const [width, setWidth] = useState(0);
   const sliderRef = useRef();
-
   useEffect(() => {
     setWidth(sliderRef.current.scrollWidth - sliderRef.current.offsetWidth);
   }, []);
@@ -65,7 +65,9 @@ const Events = () => {
           className=" flex flex-row flex-nowrap gap-5"
         >
           {cards.map((card, index) => (
-            <m.div className="relative h-[40vh] w-[45vw] mx-auto rounded-[5px] flex-none shadow-2sm ">
+            <m.div
+              className={`relative h-[40vh] w-[45vw] mx-auto rounded-[5px] flex-none shadow-2sm md:w-[230px] lg:w-[400px] `}
+            >
               <EventCard
                 key={index}
                 title={card.title}
