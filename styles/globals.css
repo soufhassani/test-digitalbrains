@@ -7,6 +7,9 @@
   .section__padding {
     @apply py-8;
   }
+  .padding__x {
+    @apply px-5;
+  }
 
   .titles {
     @apply font-roboto font-black text-center tracking-[0.02em] leading-[35px] text-[30px] text-[#303189] uppercase;
