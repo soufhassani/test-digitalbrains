@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "../containers/Header";
 import Hero from "../containers/Hero";
 import Events from "../containers/Events";
-import Events2 from "../containers/Events2";
 import Questionnaire from "../containers/Questionnaire";
 import Brands from "../containers/Brands";
 import Footer from "../containers/Footer";
@@ -20,7 +19,6 @@ export default function Home() {
         <Header />
         <Hero />
         <Events />
-        <Events2 />
         <Questionnaire />
         <Brands />
         <Footer />
