@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Questionnaire = () => {
   return (
-    <section className="section__padding">
+    <section className="section__padding px-5">
       <h2 className="titles">The Place to be</h2>
       <div className="relative h-[300px] rounded-[5px] mt-[49px] max-w-[375px] w-full mx-auto shadow-2sm">
         <div className="z-0 relative w-full h-full">

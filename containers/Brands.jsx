@@ -9,7 +9,7 @@ function Brands() {
   ];
 
   return (
-    <section className="section__padding">
+    <section className="section__padding px-5">
       <h2 className="titles">Nos Marques</h2>
       <div className="flex justify-center items-center flex-wrap gap-x-6 w-full h-full pt-[49px]">
         {brands.map((brandLogo, index) => (

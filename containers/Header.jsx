@@ -5,7 +5,7 @@ import NavLinks from "../components/NavLinks";
 
 function Header() {
   return (
-    <header className="pt-[16px] pb-[24px]">
+    <header className="pt-[16px] pb-[24px] px-5">
       <div className="flex flex-row justify-between items-center pb-[15px] ">
         <div className="flex-1">
           <BsThreeDotsVertical
